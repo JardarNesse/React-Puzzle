@@ -3,13 +3,16 @@
 var React = require('react');
 var Checkout = require('./Checkout');
 var CheckoutView = require('./CheckoutView');
+var Carpet = require('./Carpet');
 var CheckoutRepository = require('../repositories/CheckoutRepository');
+var QuestionnaireRepository = require('../repositories/QuestionnaireRepository');
 
 // Method to retrieve state from Stores
 function getApplicationState() {
   return {
     contactInfoVisible: CheckoutRepository.getContactInfoVisible(),
-    contactInfo: CheckoutRepository.getContactInformation()
+    contactInfo: CheckoutRepository.getContactInformation(),
+    results: QuestionnaireRepository.getResults()
   };
 }
 
@@ -37,6 +40,7 @@ var PuzzleApp = React.createClass({
       <div className="flux-cart-app">
         <Checkout visible={this.state.contactInfoVisible} contactInfo={this.state.contactInfo}/>
         <CheckoutView contactInfo={this.state.contactInfo}/>
+        <Carpet results={this.state.results}/>
       </div>
   	);
   },

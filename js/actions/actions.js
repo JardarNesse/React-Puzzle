@@ -3,14 +3,14 @@ var Constants = require('../constants/AppConstants');
 
 // Define action methods 
 var Actions = {
-
-  setContactInfo: function(data) {
+ 
+ updateResults: function(data) {
     AppDispatcher.handleAction({
-      actionType: Constants.SET_CHECKOUT_DATA,
+      actionType: Constants.UPDATE_RESULTS,
       data: data
     })
   },
- 
+
   receivePuzzleData: function(data) {
     AppDispatcher.handleAction({
       actionType: Constants.RECEIVE_DATA,

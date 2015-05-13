@@ -5,7 +5,7 @@ var Constants = require('../constants/AppConstants');
 var _ = require('underscore');
 
 // Define initial data points
-var contactInfoVisible = true;
+var contactInfoVisible = false;
 var entity = {
       firstName: '',
       lastName: '',

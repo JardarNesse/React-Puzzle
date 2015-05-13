@@ -4,21 +4,41 @@ module.exports = {
     localStorage.clear();
     localStorage.setItem('Puzzle', JSON.stringify([
       {
-        id: '0000001',
-        name: 'Spørsmål',
+        name: 'Oppgaver',
         image: 'Matrix.png',
-        description: 'Her har du en liten nøtt',
         variants: [
           {
+            id: '0',
+            group: 'Geografi',
+            question: 'Hva er hovedstaden i Sverige?',
+            answer: 'Stockholm',
+            css: 'carpet-black-A',
+            attemps: 0
+          },
+          {
             id: '1',
-            gruppe: 'Farger',
-            verdi: 'rød'
+            group: 'Geografi',
+            question: 'Hva er hovedstaden i Norge?',
+            answer: 'Oslo',
+            css: 'carpet-black-A',
+            attemps: 0
           },
           {
             id: '2',
-            gruppe: 'Farger',
-            verdi: 'blå'
-          }
+            group: 'Matematikk',
+            question: 'Hva er 5 * 6 ?',
+            answer: 30,
+            css: 'carpet-black-A',
+            attemps: 0
+          },
+          {
+            id: '3',
+            group: 'Matematikk',
+            question: 'Hva er 6 * 6 ?',
+            answer: 36,
+            css: 'carpet-yellow-B',
+            attemps: 1
+          },
         ]
       }
     ]));

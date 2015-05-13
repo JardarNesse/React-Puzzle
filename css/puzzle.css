@@ -25,16 +25,17 @@ body *
 
 section#puzzle-app
 {
-    width: 90%;
+    width: 50%;
     height: 90%;
     overflow-x: hidden;
     overflow-y: visible;
     top: 20px;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     position: relative;
     background-color: white;
     opacity: 0.8;
+    left: 300px;
 }
 
 h1
@@ -71,118 +72,68 @@ button
     box-shadow: 0 5px 0 #27ae60;
 }
 
-button:hover
+.carpet-black-A
 {
-    background: #27ae60;
-    box-shadow: 0 5px 1px #145b32;
-}
-
-button:active
-{
-    border-top: 5px solid white;
-    box-shadow: none;
-}
-
-button[disabled]
-{
-    background: #95a5a6;
-    box-shadow: 0 5px 0 #7f8c8d;
-}
-
-button.view-cart
-{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
-    width: auto;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-button.view-cart:active
-{
-    border-top: 5px solid #e67e22;
-}
-
-button.toggleLog
-{
-    display: inline-block;
-    position: absolute;
-    top: 340px;
-    left: 340px;
+    position: relative;
+    z-index: 998;
 
     width: 180px;
-    margin: 0 auto;
+    height: 192px;
+    background: black;
 }
 
-.hidden
-{
-    display:none;
-}
-
-.checkout
+.carpet-black-B
 {
     position: absolute;
-    z-index: 999;
-    top: 20px;
-    left: 30px; 
-    width: 300px;
-    height: 185px;
+    z-index: 998;
+    left: 180px;
+    top: 0px;
 
-    background: white;
-    box-shadow: 0 0 5px rgba(0,0,0,.5);
-    border: 1px solid #2c3e50;
-}
-
-.checkout-view
-{
-    position: absolute;
-    z-index: 999;
-    top: 20px;
-    left: 840px; 
-    width: 280px;
-    height: 185px;
-
-    background: #D0D0D0;
-    box-shadow: 0 0 5px rgba(0,0,0,.5);
-    border: 1px dashed #2c3e50;
-    opacity: 0.7;
-}
-
-.checkout-view span
-{
-    font-size: 12px;
-    position: relative;
-    left: 15px;
-}
-
-.checkout-view h1
-{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-}
-
-.checkout h1
-{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-}
-
-.checkout p
-{
-    font-size: 12px;
-    position: relative;
-    left: 15px;
-}
-
-.checkout input
-{
-    font-size: 12px;
-    position: absolute;
-    left: 90px;
     width: 180px;
+    height: 192px;
+    background: black;
+}
+.carpet-transparent-A
+{
+    position: relative;
+    z-index: 998;
+
+    width: 180px;
+    height: 192px;
+    background: black;
+    opacity: 0;
 }
 
+.carpet-transparent-B
+{
+    position: absolute;
+    z-index: 998;
+    left: 180px;
+    top: 0px;
+
+    width: 180px;
+    height: 192px;
+    background: black;
+    opacity: 0;
+}
+
+.carpet-yellow-A
+{
+    position: relative;
+    z-index: 998;
+
+    width: 180px;
+    height: 192px;
+    background: #FFFF00;
+}
+
+.carpet-yellow-B
+{
+    position: absolute;
+    z-index: 998;
+    left: 180px;
+    top: 0px;
+    width: 180px;
+    height: 192px;
+    background: #FFFF00;
+}
