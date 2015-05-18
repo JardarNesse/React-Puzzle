@@ -70,6 +70,13 @@ section#puzzle-app
     background-color: white;
     opacity: 0.6;
     left: 300px;
+
+    overflow: hidden;
+
+    background: url("../img/Matrix.png");
+    background-size: 675px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .carpet-transparent
