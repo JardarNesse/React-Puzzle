@@ -12,5 +12,5 @@ PuzzleAPI.receivePuzzleData();
 // Render App Controller View
 React.render(
   <PuzzleApp />,
-  document.getElementById('puzzle-app')
+  document.getElementById('puzzle')
 );

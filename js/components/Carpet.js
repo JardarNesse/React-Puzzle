@@ -5,10 +5,6 @@ var Actions = require('../actions/actions');
 
 var Carpet = React.createClass({
 
-  setValues: function(event){
-    Actions.updateResults(event.target);
-  },
-
   render: function() {
 
     var data = this.props.results;
@@ -19,7 +15,7 @@ var Carpet = React.createClass({
     }
 
     return (
-       <div>
+       <div className="carpet-position">
         {indents}
        </div>
     );

@@ -9,7 +9,7 @@ module.exports = {
         variants: [
           {
             id: '0',
-            category: 'Matematikk',
+            category: 'Norsk',
             question: '',
             answer: '',
             css: 'carpet-black-A',
@@ -17,11 +17,11 @@ module.exports = {
           },
           {
             id: '1',
-            category: '',
+            category: 'Engelsk',
             question: '',
             answer: '',
             css: 'carpet-black-A',
-            attemps: 0
+            attemps: 1
           },
           {
             id: '2',
@@ -65,7 +65,7 @@ module.exports = {
           },
           {
             id: '7',
-            category: 'Geografi',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-B',
@@ -81,7 +81,7 @@ module.exports = {
           },
           {
             id: '9',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-B',
@@ -89,7 +89,7 @@ module.exports = {
           },
           {
             id: '10',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-B',
@@ -97,7 +97,7 @@ module.exports = {
           },
           {
             id: '11',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-B',
@@ -249,7 +249,7 @@ module.exports = {
           },
           {
             id: '30',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-F',
@@ -265,7 +265,7 @@ module.exports = {
           },
           {
             id: '32',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-F',
@@ -273,7 +273,7 @@ module.exports = {
           },
           {
             id: '33',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-F',
@@ -294,7 +294,55 @@ module.exports = {
             answer: '',
             css: 'carpet-black-F',
             attemps: 0
-          }                    
+          },
+          {
+            id: '36',
+            category: 'Geografi',
+            question: '',
+            answer: '',
+            css: 'carpet-black-G',
+            attemps: 0
+          },
+          {
+            id: '37',
+            category: 'Geografi',
+            question: '',
+            answer: '',
+            css: 'carpet-black-G',
+            attemps: 0
+          },     
+          {
+            id: '38',
+            category: 'Geografi',
+            question: '',
+            answer: '',
+            css: 'carpet-black-G',
+            attemps: 0
+          },      
+          {
+            id: '39',
+            category: 'Geografi',
+            question: '',
+            answer: '',
+            css: 'carpet-black-G',
+            attemps: 0
+          },
+          {
+            id: '40',
+            category: 'Geografi',
+            question: '',
+            answer: '',
+            css: 'carpet-black-G',
+            attemps: 0
+          },      
+          {
+            id: '41',
+            category: 'Geografi',
+            question: '',
+            answer: '',
+            css: 'carpet-black-G',
+            attemps: 0
+          }
         ]
       }
     ]));
