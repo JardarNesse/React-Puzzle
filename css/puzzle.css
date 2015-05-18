@@ -97,15 +97,6 @@ section#puzzle-app
     background: black;
 }
 
-.carpet-yellow-A
-{
-    position: relative;
-    z-index: 998;
-    width: 90px;
-    height: 90px;
-    background: #FFFF00;
-}
-
 .carpet-black-B 
 {
     position: relative;
@@ -115,17 +106,6 @@ section#puzzle-app
     width: 90px;
     height: 90px;
     background: black;
-}
-
-.carpet-yellow-B
-{
-    position: relative;
-    z-index: 998;
-    left:90;
-    top: -540;
-    width: 90px;
-    height: 90px;
-    background: #FFFF00;
 }
 
 .carpet-black-C 
@@ -170,15 +150,4 @@ section#puzzle-app
     width: 90px;
     height: 90px;
     background: black;
-}
-
-.carpet-yellow-B
-{
-    position: absolute;
-    z-index: 998;
-    left: 90px;
-    top: 0px;
-    width: 90px;
-    height: 90px;
-    background: #FFFF00;
 }
