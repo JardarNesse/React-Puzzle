@@ -73,8 +73,8 @@ section#puzzle-app
 
     overflow: hidden;
 
-    background: url("../img/Matrix.png");
-    background-size: 675px;
+    background: url("../img/ninjago_mural_by_struphic-d41ciit.png");
+    background-size: 770px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -97,6 +97,15 @@ section#puzzle-app
     background: black;
 }
 
+.carpet-yellow-A
+{
+    position: relative;
+    z-index: 998;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
+}
+
 .carpet-black-B 
 {
     position: relative;
@@ -106,6 +115,17 @@ section#puzzle-app
     width: 90px;
     height: 90px;
     background: black;
+}
+
+.carpet-yellow-B 
+{
+    position: relative;
+    z-index: 998;
+    left: 90px;
+    top: -540px;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
 }
 
 .carpet-black-C 
@@ -119,6 +139,17 @@ section#puzzle-app
     background: black;
 }
 
+.carpet-yellow-C 
+{
+    position: relative;
+    z-index: 998;
+    left: 180px;
+    top: -1080px;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
+}
+
 .carpet-black-D 
 {
     position: relative;
@@ -128,6 +159,17 @@ section#puzzle-app
     width: 90px;
     height: 90px;
     background: black;
+}
+
+.carpet-yellow-D 
+{
+    position: relative;
+    z-index: 998;
+    left: 270px;
+    top: -1620px;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
 }
 
 .carpet-black-E 
@@ -141,6 +183,17 @@ section#puzzle-app
     background: black;
 }
 
+.carpet-yellow-E 
+{
+    position: relative;
+    z-index: 998;
+    left: 360px;
+    top: -2160px;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
+}
+
 .carpet-black-F
 {
     position: relative;
@@ -150,4 +203,15 @@ section#puzzle-app
     width: 90px;
     height: 90px;
     background: black;
+}
+
+.carpet-yellow-F
+{
+    position: relative;
+    z-index: 998;
+    left: 450px;
+    top: -2700px;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
 }

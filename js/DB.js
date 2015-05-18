@@ -20,8 +20,8 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-black-A',
-            attemps: 0
+            css: 'carpet-transparent',
+            attemps: 1
           },
           {
             id: '2',
@@ -76,7 +76,7 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-black-B',
+            css: 'carpet-transparent',
             attemps: 1
           },
           {
@@ -132,8 +132,8 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-black-C',
-            attemps: 0
+            css: 'carpet-transparent',
+            attemps: 1
           },
           {
             id: '16',
@@ -188,8 +188,8 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-black-D',
-            attemps: 0
+            css: 'carpet-transparent',
+            attemps: 1
           },
           {
             id: '23',
@@ -228,8 +228,8 @@ module.exports = {
             category: '',
             question: '',
             answer: '',            
-            css: 'carpet-black-E',
-            attemps: 0
+            css: 'carpet-transparent',
+            attemps: 1
           },
           {
             id: '28',
@@ -268,8 +268,8 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-black-F',
-            attemps: 0
+            css: 'carpet-transparent',
+            attemps: 1
           },
           {
             id: '33',
