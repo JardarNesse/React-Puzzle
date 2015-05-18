@@ -23,21 +23,6 @@ body *
     box-sizing: border-box;
 }
 
-section#puzzle-app
-{
-    width: 50%;
-    height: 90%;
-    overflow-x: hidden;
-    overflow-y: visible;
-    top: 20px;
-    margin: auto;
-    padding: 0px;
-    position: relative;
-    background-color: white;
-    opacity: 0.8;
-    left: 300px;
-}
-
 h1
 {
     color: #2c3e50;
@@ -72,68 +57,121 @@ button
     box-shadow: 0 5px 0 #27ae60;
 }
 
+section#puzzle-app
+{
+    width: 540px;
+    height: 540px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    top: 20px;
+    margin: auto;
+    padding: 0px;
+    position: relative;
+    background-color: white;
+    opacity: 0.6;
+    left: 300px;
+}
+
+.carpet-transparent
+{
+    position: relative;
+    z-index: 998;
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+}
+
 .carpet-black-A
 {
     position: relative;
     z-index: 998;
-
-    width: 180px;
-    height: 192px;
+    width: 90px;
+    height: 90px;
     background: black;
-}
-
-.carpet-black-B
-{
-    position: absolute;
-    z-index: 998;
-    left: 180px;
-    top: 0px;
-
-    width: 180px;
-    height: 192px;
-    background: black;
-}
-.carpet-transparent-A
-{
-    position: relative;
-    z-index: 998;
-
-    width: 180px;
-    height: 192px;
-    background: black;
-    opacity: 0;
-}
-
-.carpet-transparent-B
-{
-    position: absolute;
-    z-index: 998;
-    left: 180px;
-    top: 0px;
-
-    width: 180px;
-    height: 192px;
-    background: black;
-    opacity: 0;
 }
 
 .carpet-yellow-A
 {
     position: relative;
     z-index: 998;
-
-    width: 180px;
-    height: 192px;
+    width: 90px;
+    height: 90px;
     background: #FFFF00;
+}
+
+.carpet-black-B 
+{
+    position: relative;
+    z-index: 998;
+    left: 90px;
+    top: -540px;
+    width: 90px;
+    height: 90px;
+    background: black;
+}
+
+.carpet-yellow-B
+{
+    position: relative;
+    z-index: 998;
+    left:90;
+    top: -540;
+    width: 90px;
+    height: 90px;
+    background: #FFFF00;
+}
+
+.carpet-black-C 
+{
+    position: relative;
+    z-index: 998;
+    left: 180px;
+    top: -1080px;
+    width: 90px;
+    height: 90px;
+    background: black;
+}
+
+.carpet-black-D 
+{
+    position: relative;
+    z-index: 998;
+    left: 270px;
+    top: -1620px;
+    width: 90px;
+    height: 90px;
+    background: black;
+}
+
+.carpet-black-E 
+{
+    position: relative;
+    z-index: 998;
+    left: 360px;
+    top: -2160px;
+    width: 90px;
+    height: 90px;
+    background: black;
+}
+
+.carpet-black-F
+{
+    position: relative;
+    z-index: 998;
+    left: 450px;
+    top: -2700px;
+    width: 90px;
+    height: 90px;
+    background: black;
 }
 
 .carpet-yellow-B
 {
     position: absolute;
     z-index: 998;
-    left: 180px;
+    left: 90px;
     top: 0px;
-    width: 180px;
-    height: 192px;
+    width: 90px;
+    height: 90px;
     background: #FFFF00;
 }
