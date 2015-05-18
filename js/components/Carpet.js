@@ -15,7 +15,7 @@ var Carpet = React.createClass({
 
     var indents = [];
     for (var i = 0; i < data.length; i++) {
-      indents.push(<div key={data[i].id} className={data[i].css}>{data[i].css}</div>);
+      indents.push(<div key={data[i].id} className={data[i].css}>{data[i].category}</div>);
     }
 
     return (

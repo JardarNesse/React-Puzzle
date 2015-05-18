@@ -9,27 +9,27 @@ module.exports = {
         variants: [
           {
             id: '0',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-A',
-            attemps: 1
+            attemps: 0
           },
           {
             id: '1',
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-A',
+            attemps: 0
           },
           {
             id: '2',
-            category: '',
+            category: 'Engelsk',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-A',
+            attemps: 0
           },
           {
             id: '3',
@@ -41,7 +41,7 @@ module.exports = {
           },
           {
             id: '4',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-A',
@@ -65,7 +65,7 @@ module.exports = {
           },
           {
             id: '7',
-            category: '',
+            category: 'Geografi',
             question: '',
             answer: '',
             css: 'carpet-black-B',
@@ -73,18 +73,18 @@ module.exports = {
           },
           {
             id: '8',
-            category: '',
+            category: 'Norsk',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-B',
+            attemps: 0
           },
           {
             id: '9',
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
+            css: 'carpet-black-B',
             attemps: 0
           },
           {
@@ -113,7 +113,7 @@ module.exports = {
           },
           {
             id: '13',
-            category: '',
+            category: 'Engelsk',
             question: '',
             answer: '',
             css: 'carpet-black-C',
@@ -121,7 +121,7 @@ module.exports = {
           },
           {
             id: '14',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-C',
@@ -132,16 +132,16 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-C',
+            attemps: 0
           },
           {
             id: '16',
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-C',
+            attemps: 0
           },
           {
             id: '17',
@@ -161,7 +161,7 @@ module.exports = {
           },
           {
             id: '19',
-            category: '',
+            category: 'Norsk',
             question: '',
             answer: '',            
             css: 'carpet-black-D',
@@ -185,18 +185,18 @@ module.exports = {
           },
           {
             id: '22',
-            category: '',
+            category: 'Geografi',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-D',
+            attemps: 0
           },
           {
             id: '23',
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
+            css: 'carpet-black-D',
             attemps: 0
           },
           {
@@ -209,7 +209,7 @@ module.exports = {
           },
           {
             id: '25',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-E',
@@ -228,16 +228,16 @@ module.exports = {
             category: '',
             question: '',
             answer: '',            
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-E',
+            attemps: 0
           },
           {
             id: '28',
-            category: '',
+            category: 'Engelsk',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-E',
+            attemps: 0
           },
           {
             id: '29',
@@ -257,7 +257,7 @@ module.exports = {
           },
           {
             id: '31',
-            category: '',
+            category: 'Matematikk',
             question: '',
             answer: '',
             css: 'carpet-black-F',
@@ -268,19 +268,11 @@ module.exports = {
             category: '',
             question: '',
             answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
+            css: 'carpet-black-F',
+            attemps: 0
           },
           {
             id: '33',
-            category: '',
-            question: '',
-            answer: '',
-            css: 'carpet-transparent',
-            attemps: 1
-          },
-          {
-            id: '34',
             category: '',
             question: '',
             answer: '',
@@ -288,8 +280,16 @@ module.exports = {
             attemps: 0
           },
           {
+            id: '34',
+            category: 'Norsk',
+            question: '',
+            answer: '',
+            css: 'carpet-black-F',
+            attemps: 0
+          },
+          {
             id: '35',
-            category: '',
+            category: 'Geografi',
             question: '',
             answer: '',
             css: 'carpet-black-F',
