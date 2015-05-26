@@ -28,7 +28,7 @@ var Questionnaire = React.createClass({
 
     return (
       	<div className="questionnaire">
-      		<h1>Oppgaver</h1>
+      		<h1>Oppgaver for 1. klasse</h1>
       		<span className="question">{item.question}</span><br/>
       		<input className="question" type="text" value={this.answer} onChange={this.setValues}></input>
       	</div>
