@@ -26,104 +26,104 @@ module.exports = {
           {
             id: 2,
             category: 'Engelsk',
-            question: '',
-            answer: '',
+            question: 'Hva betyr: What is your name?',
+            answer: 'Hva heter du',
             css: 'carpet-black-A',
             completed: 0
           },
           {
             id: 3,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Matematikk',
+            question: 'Hva er 4 i annen?',
+            answer: '16',
             css: 'carpet-black-A',
             completed: 0
           },
           {
             id: 4,
             category: 'Matematikk',
-            question: '',
-            answer: '',
+            question: 'Hva er 24 delt på 2',
+            answer: '12',
             css: 'carpet-black-A',
             completed: 0
           },
           {
             id: 5,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Historie',
+            question: 'I hvilket år fikk Norge sin grullov?',
+            answer: '1814',
             css: 'carpet-black-A',
             completed: 0
           },
           {
             id: 6,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Norsk',
+            question: 'Hvor mange bokstaver finnes det i det norske alfabetet?',
+            answer: '29',
             css: 'carpet-black-B',
             completed: 0
           },
           {
             id: 7,
             category: 'Matematikk',
-            question: '',
-            answer: '',
+            question: 'Er -3 et positivt eller et negativt tall?',
+            answer: 'negativt',
             css: 'carpet-black-B',
             completed: 0
           },
           {
             id: 8,
             category: 'Norsk',
-            question: '',
-            answer: '',
+            question: 'Idag skal jeg løpe. I går ____ jeg',
+            answer: 'løp',
             css: 'carpet-black-B',
             completed: 0
           },
           {
             id: 9,
             category: 'Matematikk',
-            question: '',
-            answer: '',
+            question: 'Skriv inn tallene i stigende rekkefølge: [6 5 8 99]',
+            answer: '5 6 8 99',
             css: 'carpet-black-B',
             completed: 0
           },
           {
             id: 10,
             category: 'Matematikk',
-            question: '',
-            answer: '',
+            question: 'Hva heter denne kjente tall-rekkefølgen?',
+            answer: 'Fibonaccifølgen',
             css: 'carpet-black-B',
             completed: 0
           },
           {
             id: 11,
             category: 'Matematikk',
-            question: '',
-            answer: '',
+            question: 'Hva er PI',
+            answer: '3,14',
             css: 'carpet-black-B',
             completed: 0
           },
           {
             id: 12,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Matematikk',
+            question: 'Hva er X: 4 * X = 16',
+            answer: '4',
             css: 'carpet-black-C',
             completed: 0
           },
           {
             id: 13,
             category: 'Engelsk',
-            question: '',
-            answer: '',
+            question: 'Hva betyr: I am Norwegian',
+            answer: 'jeg er norsk',
             css: 'carpet-black-C',
             completed: 0
           },
           {
             id: 14,
             category: 'Matematikk',
-            question: '',
-            answer: '',
+            question: 'Hva er X: 2 + X = 8',
+            answer: '6',
             css: 'carpet-black-C',
             completed: 0
           },
