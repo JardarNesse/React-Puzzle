@@ -4,6 +4,13 @@ var Constants = require('../constants/AppConstants');
 // Define action methods 
 var Actions = {
  
+ setCurrentQuestionId: function(data){
+    AppDispatcher.handleAction({
+      actionType: Constants.SET_CURRENT_QUESTIONID,
+      data: data
+    })
+ },
+
  updateResults: function(data) {
     AppDispatcher.handleAction({
       actionType: Constants.UPDATE_RESULTS,

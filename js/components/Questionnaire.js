@@ -1,7 +1,7 @@
 var React = require('react');
 var Actions = require('../actions/actions');
 var answer = '';
-var currentQuestionId = Math.floor((Math.random() * 41) + 0);
+var currentQuestionId = Math.floor((Math.random() * 14) + 0);
 
 var Questionnaire = React.createClass({
 
@@ -12,6 +12,7 @@ var Questionnaire = React.createClass({
  	var id = currentQuestionId;
  	var answer = event.target.value;
  	var ds = this.props.results;
+ 	ds.currentQuestionId = currentQuestionId;
 
  	var res = [];
  	res[0] = parseInt(currentQuestionId,10);
@@ -25,7 +26,7 @@ var Questionnaire = React.createClass({
 
   	var data = this.props.results;
   	var index = currentQuestionId;
-  	var item = data[index];
+  	var item = data.variants[index];
 
     return (
       	<div className="questionnaire">

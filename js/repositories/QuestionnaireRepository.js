@@ -5,25 +5,22 @@ var Constants = require('../constants/AppConstants');
 var _ = require('underscore');
 
 // Define initial data points
+var _currentQuestionId = 0;
 var _results = {};
 
 // Method to load product data from mock API
 function receiveData(data) {
-  _results = data[0].variants;
+  _results = data[0];
 }
 
 function setResults(data) {
-    var id = data[0];
+    var id = data[2].currentQuestionId;
     var answer = data[1];
-    var questionSet = data[2];
+    var currentQuestion = data[2].variants[id];
 
-  if (answer.toLowerCase() === questionSet[id].answer.toLowerCase()){
-    questionSet[id].completed = 1;
-    questionSet[id].css = 'carpet-transparent';
-  }
-  else{
-    questionSet[id].completed = 0;
-    questionSet[id].css = 'carpet-black-A';
+  if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()){
+    currentQuestion.completed = 1;
+    currentQuestion.css = 'carpet-transparent';
   }
 }
 
@@ -33,6 +30,10 @@ var QuestionnaireRepository = _.extend({}, EventEmitter.prototype, {
  // Emit Change event
   emitChange: function() {
     this.emit('change');
+  },
+
+  getCurrentQuestionId: function(){
+      return _currentQuestionId;
   },
 
   getResults: function(){
@@ -53,6 +54,10 @@ var QuestionnaireRepository = _.extend({}, EventEmitter.prototype, {
 
 // Register callback with AppDispatcher
 AppDispatcher.register(function(payload) {
+
+  if(payload.action.actionType === Constants.SET_CURRENT_QUESTIONID){
+    setQuestionId(payload.action.data);   
+  }
 
   if(payload.action.actionType === Constants.RECEIVE_DATA){
     receiveData(payload.action.data);   

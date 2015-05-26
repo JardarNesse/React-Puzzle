@@ -13,7 +13,8 @@ function getApplicationState() {
   return {
     contactInfoVisible: CheckoutRepository.getContactInfoVisible(),
     contactInfo: CheckoutRepository.getContactInformation(),
-    results: QuestionnaireRepository.getResults()
+    results: QuestionnaireRepository.getResults(),
+    currentQuestionId: QuestionnaireRepository.getCurrentQuestionId()
   };
 }
 

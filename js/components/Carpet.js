@@ -7,7 +7,7 @@ var Carpet = React.createClass({
 
   render: function() {
 
-    var data = this.props.results;
+    var data = this.props.results.variants;
 
     var indents = [];
     for (var i = 0; i < data.length; i++) {
