@@ -8,7 +8,7 @@ var Questionnaire = React.createClass({
 
  	answer = event.target.value;
 
- 	var id = 0;
+ 	var id = 1;
  	var answer = event.target.value;
  	var ds = this.props.results;
 
@@ -23,7 +23,7 @@ var Questionnaire = React.createClass({
   render: function() {
 
   	var data = this.props.results;
-  	var index = 0;
+  	var index = 1;
   	var item = data[index];
 
     return (

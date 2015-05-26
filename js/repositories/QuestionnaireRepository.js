@@ -17,7 +17,7 @@ function setResults(data) {
     var answer = data[1];
     var questionSet = data[2];
 
-  if (answer === questionSet[id].answer){
+  if (answer.toLowerCase() === questionSet[id].answer.toLowerCase()){
     questionSet[id].completed = 1;
     questionSet[id].css = 'carpet-transparent';
   }
