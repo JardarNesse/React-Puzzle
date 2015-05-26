@@ -57,6 +57,10 @@ button
     box-shadow: 0 5px 0 #27ae60;
 }
 
+.question{
+    margin-left: 20px;
+}
+
 .carpet-transparent
 {
     position: relative;

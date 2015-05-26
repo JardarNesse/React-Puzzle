@@ -12,6 +12,21 @@ function receiveData(data) {
   _results = data[0].variants;
 }
 
+function setResults(data) {
+    var id = data[0];
+    var answer = data[1];
+    var questionSet = data[2];
+
+  if (answer === questionSet[id].answer){
+    questionSet[id].completed = 1;
+    questionSet[id].css = 'carpet-transparent';
+  }
+  else{
+    questionSet[id].completed = 0;
+    questionSet[id].css = 'carpet-black-A';
+  }
+}
+
 // Extend QuestionnaireRepository with EventEmitter to add eventing capabilities
 var QuestionnaireRepository = _.extend({}, EventEmitter.prototype, {
 
@@ -22,10 +37,6 @@ var QuestionnaireRepository = _.extend({}, EventEmitter.prototype, {
 
   getResults: function(){
       return _results;
-  },
-
-  setResults: function(data){
-    _results = data;
   },
 
   // Add change listener
