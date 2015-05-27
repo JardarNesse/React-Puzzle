@@ -14,18 +14,11 @@ var Questionnaire = React.createClass({
  	result.answer = event.target.value;
  	result.ds = this.props.results;
 
- 	/*var res = [];
- 	res[0] = event.target.value;
- 	res[1] = this.props.results;*/
-
     Actions.updateResults(result);
   },
 
   getNextQuestion: function(event){
-  	Actions.setCurrentQuestionId();
-  	/*var input = document.getElementById('answer');
-  	input.focus();
-  	input.value = '';*/
+  	Actions.getNextQuestionId(this.props.results);
   },
 
   render: function() {

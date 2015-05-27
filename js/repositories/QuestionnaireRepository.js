@@ -15,14 +15,15 @@ function receiveData(data) {
 
 function setQuestionId(data) {
   _currentQuestionId = Math.floor((Math.random() * 14) + 0);
+  data.currentQuestionId = _currentQuestionId;
 }
 
 function setResults(data) {
 
   var id = data.ds.currentQuestionId;
-  var answer = data.answer.toLowerCase();
   var qs = data.ds.variants[id];
   var question = qs.question;
+  var answer = data.answer.toLowerCase();
   var correctAnswer = qs.answer.toLowerCase();
 
   if (answer === correctAnswer) {
@@ -62,7 +63,7 @@ var QuestionnaireRepository = _.extend({}, EventEmitter.prototype, {
 // Register callback with AppDispatcher
 AppDispatcher.register(function(payload) {
 
-  if(payload.action.actionType === Constants.SET_CURRENT_QUESTIONID){
+  if(payload.action.actionType === Constants.SET_NEXT_QUESTIONID){
     setQuestionId(payload.action.data);    
   }
 
