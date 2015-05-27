@@ -40,21 +40,12 @@ select
 
 button
 {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    width: 80px;
 
-    display: block;
+    
 
-    width: 150px;
-    margin-top: 20px;
-    padding: 10px 30px;
-
-    color: white;
-    border: 0;
-    border-radius: 3px;
     outline: none;
-    background: blue;
-    box-shadow: 0 5px 0 blue;
 }
 
 .question{
