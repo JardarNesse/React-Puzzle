@@ -130,17 +130,17 @@ module.exports = {
           },
           {
             id: 15,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Matematikk',
+            question: 'Hva er 50% av 200?',
+            answer: '100',
             css: 'carpet-black-C',
             completed: 0
           },
           {
             id: 16,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Historie',
+            question: 'Hvilke farge er det mest av i det norske flagget?',
+            answer: 'rød',
             css: 'carpet-black-C',
             completed: 0
           },
@@ -163,8 +163,8 @@ module.exports = {
           {
             id: 19,
             category: 'Norsk',
-            question: '',
-            answer: '',            
+            question: 'Nå holder jeg på med quiz. I går ______ jeg på med noe annet.',
+            answer: 'holdt',            
             css: 'carpet-black-D',
             completed: 0
           },
