@@ -20,7 +20,9 @@ var Questionnaire = React.createClass({
 
   getNextQuestion: function(event){
   	Actions.setCurrentQuestionId();
-  	document.getElementById('answer').focus();
+  	/*var input = document.getElementById('answer');
+  	input.focus();
+  	input.value = '';*/
   },
 
   render: function() {
