@@ -92,7 +92,7 @@ module.exports = {
             id: 10,
             category: 'Matematikk',
             question: 'Hva heter denne kjente tall-rekkefølgen? [1 1 2 3 5 8]',
-            answer: 'Fibonaccifølgen',
+            answer: 'Fibonacci',
             css: 'carpet-black-B',
             completed: 0
           },

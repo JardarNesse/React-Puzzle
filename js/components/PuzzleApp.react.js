@@ -40,7 +40,7 @@ var PuzzleApp = React.createClass({
   render: function() {
   	return (
       <div>
-        <Questionnaire results={this.state.results}/>
+        <Questionnaire results={this.state.results} currentQuestionId={this.state.currentQuestionId}/>
         <Carpet results={this.state.results}/>
       </div>
   	);

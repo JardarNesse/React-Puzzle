@@ -13,14 +13,20 @@ function receiveData(data) {
   _results = data[0];
 }
 
-function setResults(data) {
-    var id = data[2].currentQuestionId;
-    var answer = data[1];
-    var currentQuestion = data[2].variants[id];
+function setQuestionId(data) {
+  _currentQuestionId = Math.floor((Math.random() * 14) + 0);
+}
 
-  if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()){
-    currentQuestion.completed = 1;
-    currentQuestion.css = 'carpet-transparent';
+function setResults(data) {
+    var id = _currentQuestionId;
+    var answer = data[1].toLowerCase();
+    var question = data[2].variants[id];
+    var rightAnswer = data[2].variants[id].answer.toLowerCase();
+
+  //if (answer.toLowerCase() === question.answer.toLowerCase()){
+  if (answer === rightAnswer) {
+    question.completed = 1;
+    question.css = 'carpet-transparent';
   }
 }
 
@@ -56,7 +62,7 @@ var QuestionnaireRepository = _.extend({}, EventEmitter.prototype, {
 AppDispatcher.register(function(payload) {
 
   if(payload.action.actionType === Constants.SET_CURRENT_QUESTIONID){
-    setQuestionId(payload.action.data);   
+    setQuestionId(payload.action.data);    
   }
 
   if(payload.action.actionType === Constants.RECEIVE_DATA){
@@ -64,7 +70,7 @@ AppDispatcher.register(function(payload) {
   }
 
  if(payload.action.actionType === Constants.UPDATE_RESULTS){
-    setResults(payload.action.data);   
+    setResults(payload.action.data);    
   }
 
   // If action was responded to, emit change event
