@@ -15,6 +15,13 @@ function receiveData(data) {
 
 function setQuestionId(data) {
   _currentQuestionId = Math.floor((Math.random() * 14) + 0);
+
+  questionSets = _results.variants;
+
+  while(questionSets[_currentQuestionId].completed > 0){
+     _currentQuestionId = Math.floor((Math.random() * 14) + 0);
+  }
+
   data.currentQuestionId = _currentQuestionId;
 }
 

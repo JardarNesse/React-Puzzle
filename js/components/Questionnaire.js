@@ -7,18 +7,17 @@ var Questionnaire = React.createClass({
  setValues: function(event){
 
  	var result = {
- 		answer: null,
- 		ds: null
+ 		answer: event.target.value,
+ 		ds: this.props.results
  	};
-
- 	result.answer = event.target.value;
- 	result.ds = this.props.results;
 
     Actions.updateResults(result);
   },
 
+
   getNextQuestion: function(event){
   	Actions.getNextQuestionId(this.props.results);
+  	
   	var input = document.getElementById('answer');
   	input.value = '';
   	input.focus();
