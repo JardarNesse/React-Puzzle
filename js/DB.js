@@ -146,17 +146,17 @@ module.exports = {
           },
           {
             id: 17,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Geografi',
+            question: 'Hvor mange land inngår i Storbrittania?',
+            answer: '5',
             css: 'carpet-black-C',
             completed: 0
           },
           {
             id: 18,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Geografi',
+            question: 'I hvilket fylke ligger Bergen',
+            answer: 'Hordaland',
             css: 'carpet-black-D',
             completed: 0
           },
@@ -170,16 +170,16 @@ module.exports = {
           },
           {
             id: 20,
-            category: '',
-            question: '',
-            answer: '',
+            category: 'Matematikk',
+            question: '(2x2) + (4x4) = ________',
+            answer: '20',
             css: 'carpet-black-D',
             completed: 0
           },
           {
             id: 21,
-            category: '',
-            question: '',
+            category: 'Matematikk',
+            question: '(2x2) x (1x4) = _________',
             answer: '',
             css: 'carpet-black-D',
             completed: 0
