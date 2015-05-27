@@ -27,8 +27,7 @@ var Questionnaire = React.createClass({
   render: function() {
 
   	var data = this.props.results;
-  	var index = data.currentQuestionId;
-  	var item = data.variants[index];
+  	var item = data.variants[data.currentQuestionId];
 
     return (
       	<div className="questionnaire">
