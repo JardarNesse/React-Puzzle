@@ -20,6 +20,7 @@ var Questionnaire = React.createClass({
 
   getNextQuestion: function(event){
   	Actions.setCurrentQuestionId();
+  	document.getElementById('answer').focus();
   },
 
   render: function() {
@@ -32,7 +33,7 @@ var Questionnaire = React.createClass({
       	<div className="questionnaire">
       		<h1>Oppgaver for 1. klasse (spørsmål: {item.id})</h1>
       		<span className="question">{item.question}</span><br/>
-      		<input className="question" type="text" value={this.answer} onChange={this.setValues}></input>
+      		<input id="answer" className="question" type="text" value={this.answer} onChange={this.setValues}></input>
       		<button type="button" onClick={this.getNextQuestion}>Neste</button>
       	</div>
     );
