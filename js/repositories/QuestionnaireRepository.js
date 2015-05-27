@@ -18,15 +18,16 @@ function setQuestionId(data) {
 }
 
 function setResults(data) {
-    var id = _currentQuestionId;
-    var answer = data[1].toLowerCase();
-    var question = data[2].variants[id];
-    var rightAnswer = data[2].variants[id].answer.toLowerCase();
 
-  //if (answer.toLowerCase() === question.answer.toLowerCase()){
-  if (answer === rightAnswer) {
-    question.completed = 1;
-    question.css = 'carpet-transparent';
+  var id = data.ds.currentQuestionId;
+  var answer = data.answer.toLowerCase();
+  var qs = data.ds.variants[id];
+  var question = qs.question;
+  var correctAnswer = qs.answer.toLowerCase();
+
+  if (answer === correctAnswer) {
+    qs.completed = 1;
+    qs.css = 'carpet-transparent';
   }
 }
 

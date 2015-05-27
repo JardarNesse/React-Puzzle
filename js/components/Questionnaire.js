@@ -6,16 +6,19 @@ var Questionnaire = React.createClass({
 
  setValues: function(event){
 
- 	answer = event.target.value;
- 	var id = this.props.currentQuestionId;
- 	var ds = this.props.results;
+ 	var result = {
+ 		answer: null,
+ 		ds: null
+ 	};
 
- 	var res = [];
- 	res[0] = parseInt(id,10);
- 	res[1] = answer;
- 	res[2] = ds;
+ 	result.answer = event.target.value;
+ 	result.ds = this.props.results;
 
-    Actions.updateResults(res);
+ 	/*var res = [];
+ 	res[0] = event.target.value;
+ 	res[1] = this.props.results;*/
+
+    Actions.updateResults(result);
   },
 
   getNextQuestion: function(event){
@@ -28,7 +31,7 @@ var Questionnaire = React.createClass({
   render: function() {
 
   	var data = this.props.results;
-  	var index = this.props.currentQuestionId;
+  	var index = data.currentQuestionId;
   	var item = data.variants[index];
 
     return (
