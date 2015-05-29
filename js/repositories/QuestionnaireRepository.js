@@ -17,8 +17,7 @@ function receiveData(data) {
 function setQuestionId(data) {
 
   _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
-
-  questionSets = _results.variants;
+  var questionSets = _results.variants;
 
   var remaining = _.filter(questionSets, 
   function(qs) { 
@@ -45,7 +44,7 @@ function completeQuestion(qs){
 function instantFeedback(answer, correctAnswer){
   for(var i = 0; i < answer.length; i ++){
     if (answer[i] !== correctAnswer[i]){
-      playSound(soundBoo);
+        playSound(soundBoo);
     }
   }
 }
