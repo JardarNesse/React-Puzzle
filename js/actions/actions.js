@@ -18,13 +18,13 @@ var Actions = {
     })
   },
 
-  receivePuzzleData: function(data) {
+  receivePuzzleData: function(data, howl) {
     AppDispatcher.handleAction({
       actionType: Constants.RECEIVE_DATA,
       data: data
     })
   }
-
+  
 };
 
 

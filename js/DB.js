@@ -107,7 +107,7 @@ module.exports = {
           {
             id: 12,
             category: 'Matematikk',
-            question: 'Hva er X: 4 * X = 16',
+            question: '4 * X = 16. Hva er X?',
             answer: '4',
             css: 'carpet-black-C',
             completed: 0
@@ -123,7 +123,7 @@ module.exports = {
           {
             id: 14,
             category: 'Matematikk',
-            question: 'Hva er X: 2 + X = 8',
+            question: '2 + X = 8. Hva er X?',
             answer: '6',
             css: 'carpet-black-C',
             completed: 0
@@ -155,7 +155,7 @@ module.exports = {
           {
             id: 18,
             category: 'Geografi',
-            question: 'I hvilket fylke ligger Bergen',
+            question: 'I hvilket fylke ligger Bergen?',
             answer: 'Hordaland',
             css: 'carpet-black-D',
             completed: 0
@@ -180,7 +180,7 @@ module.exports = {
             id: 21,
             category: 'Matematikk',
             question: '(2x2) x (1x4) = _________',
-            answer: '',
+            answer: '16',
             css: 'carpet-black-D',
             completed: 0
           },
@@ -315,32 +315,32 @@ module.exports = {
           {
             id: 38,
             category: 'Geografi',
-            question: '',
-            answer: '',
+            question: 'Hvor mange fylker finnes det i Norge?',
+            answer: '19',
             css: 'carpet-black-G',
             completed: 0
           },      
           {
             id: 39,
             category: 'Geografi',
-            question: '',
-            answer: '',
+            question: 'Hvor mange land utgjør Norden?',
+            answer: '5',
             css: 'carpet-black-G',
             completed: 0
           },
           {
             id: 40,
             category: 'Geografi',
-            question: '',
-            answer: '',
+            question: 'Hvor mange land utgjør Skandinavia?',
+            answer: '3',
             css: 'carpet-black-G',
             completed: 0
           },      
           {
             id: 41,
             category: 'Geografi',
-            question: '',
-            answer: '',
+            question: 'Hvilket velkjent (ferie-)land ligger sør for Norge?',
+            answer: 'Danmark',
             css: 'carpet-black-G',
             completed: 0
           }

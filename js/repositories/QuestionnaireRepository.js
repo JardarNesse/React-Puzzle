@@ -24,6 +24,7 @@ function setQuestionId(data) {
   }
 
   data.currentQuestionId = _currentQuestionId;
+  playNextSound('test');
 }
 
 function setResults(data) {

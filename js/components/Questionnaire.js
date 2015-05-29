@@ -12,10 +12,11 @@ var Questionnaire = React.createClass({
  	};
 
     Actions.updateResults(result);
+
   },
 
-
   getNextQuestion: function(event){
+
   	Actions.getNextQuestionId(this.props.results);
   	
   	var input = document.getElementById('answer');
@@ -33,7 +34,7 @@ var Questionnaire = React.createClass({
       		<h1>Oppgaver for 1. klasse (spørsmål: {item.id})</h1>
       		<span className="question">{item.question}</span><br/>
       		<input id="answer" className="question" type="text" value={this.answer} onChange={this.setValues}></input>
-      		<button type="button" onClick={this.getNextQuestion}>Neste</button>
+      		<button type="button" id="btn" onClick={this.getNextQuestion}>Neste</button>
       	</div>
     );
   }
