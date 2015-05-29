@@ -15,9 +15,19 @@ function receiveData(data) {
 }
 
 function setQuestionId(data) {
+
   _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
 
   questionSets = _results.variants;
+
+  var remaining = _.filter(questionSets, 
+  function(qs) { 
+    return qs.completed === 0; 
+  });
+
+  if (remaining.length < 1){
+      playSound(soundWinner);
+  }
 
   while((questionSets[_currentQuestionId].completed > 0) || (questionSets[_currentQuestionId].question.length < 1)){
      _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
@@ -29,6 +39,7 @@ function completeQuestion(qs){
     qs.completed = 1;
     qs.css = 'carpet-transparent';
     playSound(soundNext);
+    document.getElementById('btn').focus();
 }
 
 function instantFeedback(answer, correctAnswer){
