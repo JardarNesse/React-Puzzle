@@ -21,11 +21,13 @@ body
 body *
 {
     box-sizing: border-box;
+    font-family: 'copperplate';
 }
 
 h1
 {
     color: #2c3e50;
+    font-family: 'copperplate';
 }
 
 select
@@ -42,7 +44,7 @@ button
 {
     font-size: 14px;
     width: 80px;
-
+    font-family: 'copperplate';
     
 
     outline: none;
@@ -92,6 +94,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-A
@@ -101,6 +104,7 @@ button
     width: 91px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
 
 .carpet-black-B 
@@ -113,6 +117,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-B 
@@ -124,6 +129,7 @@ button
     width: 91px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
 
 .carpet-black-C 
@@ -136,6 +142,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-C 
@@ -147,6 +154,7 @@ button
     width: 91px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
 
 .carpet-black-D 
@@ -159,6 +167,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-D 
@@ -170,6 +179,7 @@ button
     width: 91px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
 
 .carpet-black-E 
@@ -182,6 +192,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-E 
@@ -193,6 +204,7 @@ button
     width: 91px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
 
 .carpet-black-F
@@ -205,6 +217,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-F
@@ -216,6 +229,7 @@ button
     width: 91px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
 
 .carpet-black-G
@@ -228,6 +242,7 @@ button
     height: 90px;
     background: black;
     color: white;
+    font-family: 'copperplate';
 }
 
 .carpet-yellow-G
@@ -239,4 +254,5 @@ button
     width: 100px;
     height: 90px;
     background: #FFFF00;
+    font-family: 'copperplate';
 }
