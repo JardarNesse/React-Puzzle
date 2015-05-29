@@ -1,18 +1,13 @@
 // sort of the controller
 
 var React = require('react');
-var Checkout = require('./Checkout');
-var CheckoutView = require('./CheckoutView');
 var Carpet = require('./Carpet');
 var Questionnaire = require('./Questionnaire');
-var CheckoutRepository = require('../repositories/CheckoutRepository');
 var QuestionnaireRepository = require('../repositories/QuestionnaireRepository');
 
 // Method to retrieve state from Stores
 function getApplicationState() {
   return {
-    contactInfoVisible: CheckoutRepository.getContactInfoVisible(),
-    contactInfo: CheckoutRepository.getContactInformation(),
     results: QuestionnaireRepository.getResults(),
     currentQuestionId: QuestionnaireRepository.getCurrentQuestionId()
   };
@@ -28,19 +23,19 @@ var PuzzleApp = React.createClass({
 
   // Add change listeners to stores
   componentDidMount: function() {
-    CheckoutRepository.addChangeListener(this._onChange);
+    QuestionnaireRepository.addChangeListener(this._onChange);
   },
 
   // Remove change listers from stores
   componentWillUnmount: function() {
-    CheckoutRepository.removeChangeListener(this._onChange);
+    QuestionnaireRepository.removeChangeListener(this._onChange);
   },
 
   // Render our child components, passing state via props
   render: function() {
   	return (
       <div>
-        <Questionnaire results={this.state.results} currentQuestionId={this.state.currentQuestionId}/>
+        <Questionnaire results={this.state.results} />
         <Carpet results={this.state.results}/>
       </div>
   	);

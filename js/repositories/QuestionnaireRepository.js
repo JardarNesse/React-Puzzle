@@ -5,6 +5,7 @@ var Constants = require('../constants/AppConstants');
 var _ = require('underscore');
 
 // Define initial data points
+var totalNumberOfQuestions = 41;
 var _currentQuestionId = 0;
 var _results = {};
 
@@ -14,17 +15,20 @@ function receiveData(data) {
 }
 
 function setQuestionId(data) {
-  _currentQuestionId = Math.floor((Math.random() * 41) + 0);
+  _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
 
   questionSets = _results.variants;
 
-  // TODO:
   while((questionSets[_currentQuestionId].completed > 0) || (questionSets[_currentQuestionId].question.length < 1)){
-     _currentQuestionId = Math.floor((Math.random() * 41) + 0);
+     _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
   }
-
   data.currentQuestionId = _currentQuestionId;
-  playNextSound('test');
+}
+
+function completeQuestion(qs){
+    qs.completed = 1;
+    qs.css = 'carpet-transparent';
+    playSound(soundNext);
 }
 
 function setResults(data) {
@@ -36,8 +40,7 @@ function setResults(data) {
   var correctAnswer = qs.answer.toLowerCase();
 
   if (answer === correctAnswer) {
-    qs.completed = 1;
-    qs.css = 'carpet-transparent';
+    completeQuestion(qs);
   }
 }
 
