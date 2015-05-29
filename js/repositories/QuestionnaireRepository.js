@@ -31,6 +31,14 @@ function completeQuestion(qs){
     playSound(soundNext);
 }
 
+function instantFeedback(answer, correctAnswer){
+  for(var i = 0; i < answer.length; i ++){
+    if (answer[i] !== correctAnswer[i]){
+      playSound(soundBoo);
+    }
+  }
+}
+
 function setResults(data) {
 
   var id = data.ds.currentQuestionId;
@@ -38,6 +46,8 @@ function setResults(data) {
   var question = qs.question;
   var answer = data.answer.toLowerCase();
   var correctAnswer = qs.answer.toLowerCase();
+
+  instantFeedback(answer, correctAnswer);
 
   if (answer === correctAnswer) {
     completeQuestion(qs);
