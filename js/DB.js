@@ -59,7 +59,7 @@ module.exports = {
           {
             id: 6,
             category: 'Norsk',
-            question: 'Hvor mange bokstaver finnes det i det norske alfabetet?',
+            question: 'Antall bokstaver i det norske alfabetet?',
             answer: '29',
             css: 'carpet-black-B',
             completed: 0
@@ -163,7 +163,7 @@ module.exports = {
           {
             id: 19,
             category: 'Norsk',
-            question: 'Nå holder jeg på med quiz. I går ______ jeg på med noe annet.',
+            question: 'Nå holder jeg på med quiz. I går ___ jeg på med et spill.',
             answer: 'holdt',            
             css: 'carpet-black-D',
             completed: 0

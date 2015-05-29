@@ -28,6 +28,7 @@ h1
 {
     color: #2c3e50;
     font-family: 'copperplate';
+    padding-left: 20px;
 }
 
 select
@@ -44,6 +45,15 @@ button
     width: 80px;
     font-family: 'copperplate';
     outline: none;
+    margin-left: 3px;
+}
+
+
+.questions{
+    position: absolute;
+    left: 70px;
+    top: 170px;
+    margin-left: 40px;
 }
 
 .question{
