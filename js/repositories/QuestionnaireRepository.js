@@ -5,7 +5,7 @@ var Constants = require('../constants/AppConstants');
 var _ = require('underscore');
 
 // Define initial data points
-var totalNumberOfQuestions = 41;
+var totalNumberOfQuestions = 42;
 var _currentQuestionId = 0;
 var _results = {};
 
@@ -45,14 +45,14 @@ function setQuestionId(data) {
 function completeQuestion(qs){
     qs.completed = 1;
     qs.css = 'carpet-transparent';
-    //playSound(soundNext);
+    playSound(soundNext);
     document.getElementById('btn').focus();
 }
 
 function instantFeedback(answer, correctAnswer){
   for(var i = 0; i < answer.length; i ++){
     if (answer[i] !== correctAnswer[i]){
-        //playSound(soundBoo);
+        playSound(soundBoo);
     }
   }
 }
