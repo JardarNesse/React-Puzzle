@@ -1,8 +1,31 @@
-		<script src="js/external/howler.min.js"></script>
-
-		<script>
-			function playSound(sound) {
-		    	var player = new Howl({urls: [sound]});
-		        player.play();
-		  	}
-	  	</script>
+module.exports = {
+  // Load Mock Puzzle Data Into localStorage
+  init: function() {
+    localStorage.clear();
+    localStorage.setItem('Puzzle', JSON.stringify([
+      {
+        name: 'Oppgaver',
+        image: 'Matrix.png',
+        currentQuestionId: 0,
+        variants: [
+          {
+            id: 0,
+            category: 'Matematikk',
+            question: 'Hva er kvadratroten av 250?',
+            answer: '50',
+            css: 'carpet-black-A',
+            completed: 0
+          },
+          {
+            id: 1,
+            category: 'Engelsk',
+            question: 'Hva betyr: What´s the clock?',
+            answer: 'Hva er klokken',
+            css: 'carpet-black-A',
+            completed: 0
+          }
+        ]
+      }
+    ]));
+  }
+};

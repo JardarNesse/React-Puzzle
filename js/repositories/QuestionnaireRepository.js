@@ -14,9 +14,12 @@ function receiveData(data) {
   _results = data[0];
 }
 
+function getRandomNumberFrom(range){
+  return Math.floor((Math.random() * range) + 0);
+}
+
 function setQuestionId(data) {
 
-  _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
   var questionSets = _results.variants;
 
   var remaining = _.filter(questionSets, 
@@ -27,24 +30,29 @@ function setQuestionId(data) {
   if (remaining.length < 1){
       playSound(soundWinner);
   }
+  else
+  {
+    var _currentQuestionId = getRandomNumberFrom(totalNumberOfQuestions);
 
-  while((questionSets[_currentQuestionId].completed > 0) || (questionSets[_currentQuestionId].question.length < 1)){
-     _currentQuestionId = Math.floor((Math.random() * totalNumberOfQuestions) + 0);
+    while(questionSets[_currentQuestionId].completed === 1){
+      _currentQuestionId = getRandomNumberFrom(totalNumberOfQuestions);
+    }
+
+    data.currentQuestionId = _currentQuestionId;  
   }
-  data.currentQuestionId = _currentQuestionId;
 }
 
 function completeQuestion(qs){
     qs.completed = 1;
     qs.css = 'carpet-transparent';
-    playSound(soundNext);
+    //playSound(soundNext);
     document.getElementById('btn').focus();
 }
 
 function instantFeedback(answer, correctAnswer){
   for(var i = 0; i < answer.length; i ++){
     if (answer[i] !== correctAnswer[i]){
-        playSound(soundBoo);
+        //playSound(soundBoo);
     }
   }
 }

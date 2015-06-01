@@ -187,8 +187,8 @@ module.exports = {
           {
             id: 22,
             category: 'Geografi',
-            question: '',
-            answer: '',
+            question: 'Hva er Norges høyeste fjell?',
+            answer: 'Galdhøpiggen',
             css: 'carpet-black-D',
             completed: 0
           },
