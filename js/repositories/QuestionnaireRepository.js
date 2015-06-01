@@ -32,13 +32,13 @@ function setQuestionId(data) {
   }
   else
   {
-    var _currentQuestionId = getRandomNumberFrom(totalNumberOfQuestions);
+    var random = getRandomNumberFrom(totalNumberOfQuestions);
 
-    while(questionSets[_currentQuestionId].completed === 1){
-      _currentQuestionId = getRandomNumberFrom(totalNumberOfQuestions);
+    while(questionSets[random].completed === 1){
+      random = getRandomNumberFrom(totalNumberOfQuestions);
     }
 
-    data.currentQuestionId = _currentQuestionId;  
+    data.currentQuestionId = random;  
   }
 }
 
