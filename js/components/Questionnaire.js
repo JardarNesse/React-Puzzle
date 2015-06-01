@@ -33,10 +33,11 @@ var Questionnaire = React.createClass({
       	<div className="questionnaire">
       		<div className="questions">
       			<h1>Junior Quiz</h1>
-      			<span className="question">{item.category}</span><br/><br/>
+      			<span className="category">{item.category}</span><br/><br/>
 	      		<span className="question">{item.question}</span><br/><br/>
-	      		<input id="answer" className="question" type="text" value={this.answer} onChange={this.setValues}></input>
+	      		<input id="answer" className="your-answer" type="text" value={this.answer} onChange={this.setValues}></input>
 	      		<button type="button" id="btn" onClick={this.getNextQuestion}>Neste</button><br/>
+	      		<span className="sysinfo">Spørsmål id {item.id}</span><br/>
       		</div>
       	</div>
     );
