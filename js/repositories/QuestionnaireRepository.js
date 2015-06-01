@@ -27,18 +27,18 @@ function setQuestionId(data) {
     return qs.completed === 0; 
   });
 
-  if (remaining.length < 1){
-      playSound(soundWinner);
-  }
-  else
-  {
-    var random = getRandomNumberFrom(totalNumberOfQuestions);
+  if (remaining.length > 0){
+     var random = getRandomNumberFrom(totalNumberOfQuestions);
 
     while(questionSets[random].completed === 1){
       random = getRandomNumberFrom(totalNumberOfQuestions);
     }
 
     data.currentQuestionId = random;  
+  }
+  else
+  {
+    playSound(soundWinner);  
   }
 }
 
