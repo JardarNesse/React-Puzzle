@@ -339,7 +339,7 @@ module.exports = {
           {
             id: 41,
             category: 'Geografi',
-            question: 'Hvilket velkjent (ferie-)land ligger sør for Norge?',
+            question: 'Hvilket land ligger rett sør for Norge?',
             answer: 'Danmark',
             css: 'carpet-black-G',
             completed: 0
