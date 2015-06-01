@@ -6,12 +6,13 @@ var _ = require('underscore');
 
 // Define initial data points
 var totalNumberOfQuestions = 42;
-var _currentQuestionId = 0;
+var _currentQuestionId = null;
 var _results = {};
 
 // Method to load product data from mock API
 function receiveData(data) {
   _results = data[0];
+  _results.currentQuestionId = getRandomNumberFrom(totalNumberOfQuestions);
 }
 
 function getRandomNumberFrom(range){
