@@ -62,7 +62,6 @@ function setResults(data) {
 
   var id = data.ds.currentQuestionId;
   var qs = data.ds.variants[id];
-  var question = qs.question;
   var answer = data.answer.toLowerCase();
   var correctAnswer = qs.answer.toLowerCase();
 
