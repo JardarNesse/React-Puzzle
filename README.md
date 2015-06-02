@@ -1,5 +1,5 @@
 # React-Puzzle
-React &amp; Flux - sort of a template project
+React &amp; Flux - a little quiz for Norwegian juniors (e.g. my own kids)
 
 Run: 
 
