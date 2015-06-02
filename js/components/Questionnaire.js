@@ -37,7 +37,7 @@ var Questionnaire = React.createClass({
 	      		<span className="question">{item.question}</span><br/><br/>
 	      		<input id="answer" className="your-answer" type="text" value={this.answer} onChange={this.setValues}></input>
 	      		<button type="button" id="btn" onClick={this.getNextQuestion}>Neste</button><br/>
-	      		<span className="sysinfo">Spørsmål id {item.id}</span><br/>
+	      		<span className="sysinfo">Special thanks to http://www.freesfx.co.uk for sounds.</span><br/>
       		</div>
       	</div>
     );

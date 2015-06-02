@@ -36,24 +36,25 @@ function setQuestionId(data) {
     }
 
     data.currentQuestionId = random;  
+    globalStuff.playSound(soundOpenDoor);
   }
   else
   {
-    playSound(soundWinner);  
+    globalStuff.playSound(soundShooting);  
   }
 }
 
 function completeQuestion(qs){
     qs.completed = 1;
     qs.css = 'carpet-transparent';
-    playSound(soundNext);
+    globalStuff.playSound(soundYeehaa);
     document.getElementById('btn').focus();
 }
 
 function instantFeedback(answer, correctAnswer){
   for(var i = 0; i < answer.length; i ++){
     if (answer[i] !== correctAnswer[i]){
-        playSound(soundBoo);
+        globalStuff.playSound(soundAhAhAh);
     }
   }
 }

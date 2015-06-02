@@ -18,7 +18,7 @@ var PuzzleApp = React.createClass({
 
   // Get initial state from stores
   getInitialState: function() {
-    playSound(soundMagicStart);
+    globalStuff.playSound(soundMagicStart);
     return getApplicationState();
   },
 
