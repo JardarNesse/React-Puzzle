@@ -19,7 +19,7 @@ module.exports = {
           {
             id: 1,
             category: 'Engelsk',
-            question: 'Hva betyr: What´s the clock?',
+            question: 'Hva betyr: What´s the time?',
             answer: 'Hva er klokken',
             css: 'carpet-black-A',
             completed: 0

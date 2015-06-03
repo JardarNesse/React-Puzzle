@@ -1,5 +1,3 @@
-// *** SOUNDS ***
-
 /*
 var soundNext = 'http://www.javascriptoo.com/application/html/pong.wav';
 var soundOfVictory = 'http://soundbible.com/mp3/SMALL_CROWD_APPLAUSE-Yannick_Lemieux-1268806408.mp3';
@@ -19,10 +17,12 @@ var soundMagic = 'sounds/magic_spell_trick_sound_001.mp3';
 
 var globalStuff = {
 
- 		playSound: function playSound(sound) {
-  			var player = new Howl({urls: [sound]});
-    		player.play();
-		}
- 	};
+	imgNinjago1: 'img/ninjago_mural_by_struphic-d41ciit.png',
+	imgMatrix: 'img/Matrix.png',
 
-// *** END SOUNDS ***
+	playSound: function playSound(sound) {
+		var player = new Howl({urls: [sound]});
+	player.play();
+	}
+};
+

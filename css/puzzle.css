@@ -122,6 +122,16 @@ button
     background-position: right;
 }
 
+.carpet-image 
+{
+    position: absolute;
+    left: 620px;
+    width: 640px;
+    height: 540px;
+    top: 50px;
+    z-index: 997;
+}
+
 .carpet-black-A
 {
     position: relative;

@@ -1,6 +1,7 @@
 // view
 
 var React = require('react');
+var hiddenImage = globalStuff.imgNinjago1;
 
 var Carpet = React.createClass({
 
@@ -14,8 +15,9 @@ var Carpet = React.createClass({
     }
 
     return (
-       <div className="carpet-position carpet-background">
-          {indents}
+       <div>
+          <div><img className="carpet-image" src={hiddenImage}/></div>
+          <div className="carpet-position">{indents}</div>
        </div>
     );
   }
