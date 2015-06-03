@@ -1,7 +1,6 @@
 // view
 
 var React = require('react');
-var Actions = require('../actions/actions');
 
 var Carpet = React.createClass({
 
@@ -15,8 +14,8 @@ var Carpet = React.createClass({
     }
 
     return (
-       <div className="carpet-position">
-        {indents}
+       <div className="carpet-position carpet-background">
+          {indents}
        </div>
     );
   }

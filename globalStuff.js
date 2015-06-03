@@ -18,6 +18,7 @@ var soundShooting = 'sounds/extreme_loud_war_battle.mp3';
 var soundMagic = 'sounds/magic_spell_trick_sound_001.mp3';
 
 var globalStuff = {
+
  		playSound: function playSound(sound) {
   			var player = new Howl({urls: [sound]});
     		player.play();

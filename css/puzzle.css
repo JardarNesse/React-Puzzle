@@ -104,7 +104,9 @@ button
     width: 640px;
     height: 540px;
     top: -490px;
+}
 
+.carpet-background{
     background: url("../img/ninjago_mural_by_struphic-d41ciit.png");
     background-size: 760px;
     background-repeat: no-repeat;
