@@ -12,6 +12,7 @@ var soundAhh = 'http://soundbible.com/mp3/Aww-SoundBible.com-1421700712.mp3';
 var soundYeehaa = 'sounds/comedy_male_yelling_yee_ha.mp3';
 var soundOpenDoor = 'sounds/sci_fi_space_door.mp3';
 var soundShooting = 'sounds/extreme_loud_war_battle.mp3';
+var soundMagic = 'sounds/magic_spell_trick_sound_001.mp3';
 
 /*function playSound(sound) {
   var player = new Howl({urls: [sound]});

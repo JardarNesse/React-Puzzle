@@ -40,14 +40,14 @@ function setQuestionId(data) {
   }
   else
   {
-    globalStuff.playSound(soundShooting);  
+    globalStuff.playSound(soundYeehaa);  
   }
 }
 
 function completeQuestion(qs){
     qs.completed = 1;
     qs.css = 'carpet-transparent';
-    globalStuff.playSound(soundYeehaa);
+    globalStuff.playSound(soundMagic);
     document.getElementById('btn').focus();
 }
 
