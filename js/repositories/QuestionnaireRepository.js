@@ -12,11 +12,7 @@ var _results = {};
 // Method to load product data from mock API
 function receiveData(data) {
   _results = data[0];
-  _results.currentQuestionId = getRandomNumberFrom(totalNumberOfQuestions);
-}
-
-function getRandomNumberFrom(range){
-  return Math.floor((Math.random() * range) + 0);
+  _results.currentQuestionId = globalStuff.getRandomNumberFrom(totalNumberOfQuestions);
 }
 
 function setQuestionId(data) {
@@ -29,10 +25,10 @@ function setQuestionId(data) {
   });
 
   if (remaining.length > 0){
-     var random = getRandomNumberFrom(totalNumberOfQuestions);
+     var random = globalStuff.getRandomNumberFrom(totalNumberOfQuestions);
 
     while(questionSets[random].completed === 1){
-      random = getRandomNumberFrom(totalNumberOfQuestions);
+      random = globalStuff.getRandomNumberFrom(totalNumberOfQuestions);
     }
 
     data.currentQuestionId = random;  

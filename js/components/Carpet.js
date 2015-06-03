@@ -1,7 +1,8 @@
 // view
 
 var React = require('react');
-var hiddenImage = globalStuff.imgNinjago1;
+var numberOfHiddenImages = globalStuff.images.length;
+var hiddenImage = globalStuff.images[globalStuff.getRandomNumberFrom(numberOfHiddenImages)];
 
 var Carpet = React.createClass({
 

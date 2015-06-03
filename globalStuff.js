@@ -15,14 +15,19 @@ var soundOpenDoor = 'sounds/sci_fi_space_door.mp3';
 var soundShooting = 'sounds/extreme_loud_war_battle.mp3';
 var soundMagic = 'sounds/magic_spell_trick_sound_001.mp3';
 
+var imgNinjago1 = 'img/ninjago_mural_by_struphic-d41ciit.png';
+var	imgMatrix = 'img/Matrix.png';
+
 var globalStuff = {
 
-	imgNinjago1: 'img/ninjago_mural_by_struphic-d41ciit.png',
-	imgMatrix: 'img/Matrix.png',
+	images: [imgNinjago1, imgMatrix],
 
 	playSound: function playSound(sound) {
 		var player = new Howl({urls: [sound]});
-	player.play();
+		player.play();
+	},
+
+	getRandomNumberFrom: function(range){
+  		return Math.floor((Math.random() * range) + 0);
 	}
 };
-
