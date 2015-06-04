@@ -17,10 +17,16 @@ var soundMagic = 'sounds/magic_spell_trick_sound_001.mp3';
 
 var imgNinjago1 = 'img/ninjago_mural_by_struphic-d41ciit.png';
 var	imgMatrix = 'img/Matrix.png';
+var imgMarvelArt = 'img/Marvel Art.jpg';
+var imgLegoguys = 'img/legoguys.jpeg';
+var imgLegoMovie = 'img/legomovie.jpg';
+var imgLegoNinjago = 'img/lego_ninjago.jpg';
+var imgLegoNinjago2 = 'img/LEGO-Universe-Now-Filled-with-Ninjago-Characters-2.jpg';
+var imgNinjaTransparent = 'img/ninja_transparent.png';
 
 var globalStuff = {
 
-	images: [imgNinjago1, imgMatrix],
+	images: [imgLegoNinjago2, imgMarvelArt, imgLegoguys, imgLegoMovie, imgLegoNinjago, imgNinjaTransparent],
 
 	playSound: function playSound(sound) {
 		var player = new Howl({urls: [sound]});
