@@ -11,8 +11,8 @@ module.exports = {
           {
             id: 0,
             category: 'Matematikk',
-            question: 'Hva er kvadratroten av 250?',
-            answer: '50',
+            question: 'Hva er kvadratroten av 36?',
+            answer: '6',
             css: 'carpet-black-A',
             completed: 0
           },
@@ -243,8 +243,8 @@ module.exports = {
           {
             id: 29,
             category: 'Fysikk',
-            question: 'Hvor mye av et isfjell flyter (1/10 eller 1/5 eller 1/2)?',
-            answer: '1/10',
+            question: 'Hvor mye av et isfjell flyter (1/10, 1/7 eller 1/2)?',
+            answer: '1/7',
             css: 'carpet-black-E',
             completed: 0
           },
