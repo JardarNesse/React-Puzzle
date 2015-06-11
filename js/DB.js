@@ -21,6 +21,7 @@ module.exports = {
             category: 'Engelsk',
             question: 'Hva betyr: What´s the time?',
             answer: 'Hva er klokken',
+            alternatives: ['Hvordan går det', 'Er tiden moden', 'Hva er klokken'],
             css: 'carpet-black-A',
             completed: 0
           },
