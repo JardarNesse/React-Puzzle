@@ -45,6 +45,9 @@ function completeQuestion(qs){
     qs.css = 'carpet-transparent';
     globalStuff.playSound(soundMagic);
     document.getElementById('btn').focus();
+    if (qs.alternatives !== undefined){
+      qs.alternatives = [];  
+    }
 }
 
 function instantFeedback(answer, correctAnswer){

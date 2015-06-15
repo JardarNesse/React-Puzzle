@@ -25,8 +25,11 @@ var Questionnaire = React.createClass({
   	Actions.getNextQuestionId(this.props.results);
   	
   	var input = document.getElementById('answer');
-  	input.value = '';
-  	input.focus();
+
+    if (input !== null){
+      input.value = '';
+      input.focus();  
+    }
   },
 
   setValues: function(event){
@@ -57,12 +60,11 @@ var Questionnaire = React.createClass({
 
       for (var i = 0; i < item.alternatives.length; i++) {
 
-          var result = {
+              var result = {
               id: i,
               text: item.alternatives[i] 
           }
 
-          console.log('currentQuestionId in parent: ' + this.props.results.currentQuestionId);
           indents.push(<ListItemWrapper key={result.id} text={result.text} results={data}/>);
         }
       input = <ol>{indents}</ol>

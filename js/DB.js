@@ -13,6 +13,7 @@ module.exports = {
             category: 'Matematikk',
             question: 'Hva er kvadratroten av 36?',
             answer: '6',
+            alternatives: ['4', '5', '6'],
             css: 'carpet-black-A',
             completed: 0
           },
@@ -70,6 +71,7 @@ module.exports = {
             category: 'Matematikk',
             question: 'Er -3 et positivt eller et negativt tall?',
             answer: 'negativt',
+            alternatives: ['Positivt', 'Negativt'],
             css: 'carpet-black-B',
             completed: 0
           },
@@ -78,6 +80,7 @@ module.exports = {
             category: 'Norsk',
             question: 'Idag skal jeg løpe. I går ____ jeg',
             answer: 'løp',
+            alternatives: ['Løpet', 'Løp', 'Løp ikke, jeg gikk'],
             css: 'carpet-black-B',
             completed: 0
           },
@@ -142,6 +145,7 @@ module.exports = {
             category: 'Historie',
             question: 'Hvilke farge er det mest av i det norske flagget?',
             answer: 'rød',
+            alternatives: ['Rød', 'Hvit', 'Blå'],
             css: 'carpet-black-C',
             completed: 0
           },
@@ -150,6 +154,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hvor mange land inngår i Storbrittania?',
             answer: '5',
+            alternatives: ['3', '5', '7'],
             css: 'carpet-black-C',
             completed: 0
           },
@@ -158,6 +163,7 @@ module.exports = {
             category: 'Geografi',
             question: 'I hvilket fylke ligger Bergen?',
             answer: 'Hordaland',
+            alternatives: ['Rogaland', 'Hordaland', 'Sogn og Fjordane'],
             css: 'carpet-black-D',
             completed: 0
           },
@@ -165,7 +171,8 @@ module.exports = {
             id: 19,
             category: 'Norsk',
             question: 'Nå holder jeg på med quiz. I går ___ jeg på med et spill.',
-            answer: 'holdt',            
+            answer: 'holdt',
+            alternatives: ['Holdtet', 'Holdt', 'Holder'],            
             css: 'carpet-black-D',
             completed: 0
           },
@@ -190,6 +197,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hva er Norges høyeste fjell?',
             answer: 'Galdhøpiggen',
+            alternatives: ['Glittertind', 'Galdhøpiggen', 'Ulriken'],
             css: 'carpet-black-D',
             completed: 0
           },
@@ -205,7 +213,8 @@ module.exports = {
             id: 24,
             category: 'Engelsk',
             question: 'Hva betyr: What is my name?',
-            answer: 'Hva heter jeg',            
+            answer: 'Hva heter jeg',   
+            alternatives: ['Hva heter du', 'Hva heter jeg'],         
             css: 'carpet-black-E',
             completed: 0
           },
@@ -214,6 +223,7 @@ module.exports = {
             category: 'Geografi',
             question: 'I hvilket kontinent ligger Norge?',
             answer: 'Europa',
+            alternatives: ['Afrika', 'Asia', 'Europa', 'Sør-Amerika', 'Nord-Amerika'],
             css: 'carpet-black-E',
             completed: 0
           },
@@ -222,6 +232,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hva er hovedstaden i England?',
             answer: 'London',
+            alternatives: ['Paris', 'London', 'København', 'Stockholm'],
             css: 'carpet-black-E',
             completed: 0
           },
@@ -230,6 +241,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hva er hovedstaden i Frankrike?',
             answer: 'Paris',            
+            alternatives: ['Paris', 'London', 'København', 'Stockholm'],
             css: 'carpet-black-E',
             completed: 0
           },
@@ -238,14 +250,16 @@ module.exports = {
             category: 'Geografi',
             question: 'Hva er hovedstaden i Sverige?',
             answer: 'Stockholm',
+            alternatives: ['Paris', 'London', 'København', 'Stockholm'],
             css: 'carpet-black-E',
             completed: 0
           },
           {
             id: 29,
             category: 'Fysikk',
-            question: 'Hvor mye av et isfjell flyter (1/10, 1/7 eller 1/2)?',
+            question: 'Hvor mye av et isfjell flyter over vannet?',
             answer: '1/7',
+            alternatives: ['1/10', '1/7', '1/2', 'Ingenting, isfjell synker'],
             css: 'carpet-black-E',
             completed: 0
           },
@@ -254,6 +268,7 @@ module.exports = {
             category: 'Kroppen',
             question: 'Ca hvor mange muskler finnes det i kroppen?',
             answer: '600',
+            alternatives: ['600', '200', '1000', 'Massevis'],
             css: 'carpet-black-F',
             completed: 0
           },
@@ -262,6 +277,7 @@ module.exports = {
             category: 'Kroppen',
             question: 'Hvor mange knokler finnes det i kroppen?',
             answer: '200',
+            alternatives: ['600', '200', '1000', 'Massevis'],
             css: 'carpet-black-F',
             completed: 0
           },
@@ -318,6 +334,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hvor mange fylker finnes det i Norge?',
             answer: '19',
+            alternatives: ['17', '18', '19', '20'],
             css: 'carpet-black-G',
             completed: 0
           },      
@@ -326,6 +343,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hvor mange land utgjør Norden?',
             answer: '5',
+            alternatives: ['3', '5', '8'],
             css: 'carpet-black-G',
             completed: 0
           },
@@ -334,6 +352,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hvor mange land utgjør Skandinavia?',
             answer: '3',
+            alternatives: ['3', '5', '8'],
             css: 'carpet-black-G',
             completed: 0
           },      
@@ -342,6 +361,7 @@ module.exports = {
             category: 'Geografi',
             question: 'Hvilket land ligger rett sør for Norge?',
             answer: 'Danmark',
+            alternatives: ['Danmark', 'Legoland'],
             css: 'carpet-black-G',
             completed: 0
           }
