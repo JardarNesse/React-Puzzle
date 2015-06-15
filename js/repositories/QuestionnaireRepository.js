@@ -71,7 +71,8 @@ function setResults(data) {
 
   instantFeedback(answer, correctAnswer);
 
-  if (answer === correctAnswer) {
+  if (globalStuff.areEqual(answer, qs.answer))
+  {
     completeQuestion(qs);
   }
 }

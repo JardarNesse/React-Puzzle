@@ -55,6 +55,7 @@ module.exports = {
             category: 'Historie',
             question: 'I hvilket år fikk Norge sin grunnlov?',
             answer: '1814',
+            alternatives: ['1814', '1905'],
             css: 'carpet-black-A',
             completed: 0
           },

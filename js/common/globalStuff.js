@@ -35,5 +35,12 @@ var globalStuff = {
 
 	getRandomNumberFrom: function(range){
   		return Math.floor((Math.random() * range) + 0);
+	},
+
+ 	areEqual: function(x, y){
+	  if (x.toLowerCase() === y.toLowerCase()){
+	    return true;
+	  }
+	  return false;
 	}
 };
