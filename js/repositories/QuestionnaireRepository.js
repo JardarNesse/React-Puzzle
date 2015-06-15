@@ -40,14 +40,18 @@ function setQuestionId(data) {
   }
 }
 
+function prepareForNextQuestion(qs){
+    document.getElementById('btn').focus();
+    if (qs.alternatives !== undefined){
+       qs.alternatives = [];  
+    }
+}
+
 function completeQuestion(qs){
     qs.completed = 1;
     qs.css = 'carpet-transparent';
     globalStuff.playSound(soundMagic);
-    document.getElementById('btn').focus();
-    if (qs.alternatives !== undefined){
-      qs.alternatives = [];  
-    }
+    prepareForNextQuestion(qs);
 }
 
 function instantFeedback(answer, correctAnswer){
