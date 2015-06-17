@@ -85,6 +85,13 @@ button
     left: -100px;
 }
 
+.architecture
+{
+    position: absolute;
+    font-size: 10px;
+    top: 355px;
+    left: 370px;
+}
 .carpet-transparent
 {
     position: relative;

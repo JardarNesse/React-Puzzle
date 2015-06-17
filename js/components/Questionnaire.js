@@ -32,6 +32,10 @@ var Questionnaire = React.createClass({
     }
   },
 
+  showArchitecture: function(){
+    alert('We`ll display an image here');
+  },
+
   setValues: function(event){
 
   var result = null;
@@ -79,6 +83,7 @@ var Questionnaire = React.createClass({
               {input}
               <button type="button" id="btn" onClick={this.getNextQuestion}>Neste</button><br/>
               <span className="sysinfo">Special thanks to http://www.freesfx.co.uk for sounds.</span><br/>
+              <span type="button" id="architectureButton" className="architecture" onClick={this.showArchitecture}>architecture</span>
             </div>
           </div>
         ); 
